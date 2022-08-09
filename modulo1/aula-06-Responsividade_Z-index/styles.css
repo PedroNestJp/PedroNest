@@ -1,0 +1,29 @@
+.caixa1{
+    position: absolute;
+    display: flex;
+    left: 50%;
+    top: 50%;
+    background-color: blueviolet;
+    height: 100px;
+    width: 100px;
+    color: aqua;
+    
+}
+.caixa2{
+    position: absolute;
+    left: 300px;
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+    color: red;
+    
+}
+.caixa3{
+    position: fixed;
+    background-color: brown;
+    left: 50px;
+    height: 150px;
+    width: 150px;
+    color: blueviolet;
+    
+}

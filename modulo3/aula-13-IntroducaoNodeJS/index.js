@@ -1,0 +1,3 @@
+function digaOla() {
+    alert('Olá')
+  }

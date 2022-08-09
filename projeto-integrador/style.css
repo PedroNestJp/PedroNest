@@ -1,0 +1,23 @@
+
+.body{
+    background-color:#F5F5F5 ;
+
+}.cabecalho{
+    background-color: white;
+position: absolute;
+width: 1440px;
+height: 128px;
+left: 0px;
+top: 0px;
+border: 0.5px solid #000000
+}
+.cabecalho-logo{
+position: absolute;
+width: 178px;
+height: 46px;
+left: 33px;
+top: 41px;
+
+background: url(logo3.png);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}

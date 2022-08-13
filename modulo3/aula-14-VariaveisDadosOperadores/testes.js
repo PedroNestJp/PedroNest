@@ -8,5 +8,5 @@ let meusObjetos = {
     objto4: 4
 }
 
-delete meusObjetos.obejto3
+delete meusObjetos.objto3
 console.log(meusObjetos)

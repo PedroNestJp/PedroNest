@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Casero - Cadastro-perfil</title>
+    <link rel="stylesheet" href="style-cadastr0-perfil.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+        <img class="logo-header" src="../../assets/logo3.png" alt="logo3" />
+        <div class="anuncio-header">Meus anúncios</div>
+        <div class="chat-header">Chat</div>
+        <div class="notificacao-header">Notificações</div>
+        <div>
+          <img
+            class="image-avatar"
+            src="../../assets/avatar.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+        <div class="nome-corretor">Nome Corretor</div>
+        <button class="div-anuncie" type="submit">Anuncie-já</button>
+      </div>
+    </header>
+    <div>
+        <h1 class="cadastro-titulo">Meu Cadastro</h1>
+        <h6 class="altere-titulo">Altere seu cadastro</h6>
+        <div class="dados-da-conta">
+            <h1 class="titulo-card-dados">Dados da conta</h1>
+            <label class="label-nome-completo">Nome completo </label
+                ><input
+                  class="input-name-full"
+                  placeholder="Nome completo"
+                  type="text"
+                  name="nome"
+                  id="nome"
+                  required
+                />
+                <label class="label-apelido">Apelido </label
+                ><input
+                class="input-apelido"
+                  placeholder="Apelido"
+                  type="text"
+                  name="apelido"
+                  id="apelido"
+                  required
+                />
+                <label class="label-cpf">CPF/CNPJ </label
+                ><input
+                class="input-cpf"
+                  placeholder="CPF/CNPJ"
+                  type="text"
+                  name="cpf/cnpj"
+                  id="cpf/cnpj"
+                  required
+                />
+                <label class="label-genero">Genero</label
+                >
+                <span class="span-generos" >
+                  <input
+                   type="checkbox" name="masculino" id="masculino"
+                  />
+                <label> Masculino </label>
+                <input type="checkbox" name="feminino" id="feminino">
+                <label>feminino</label>
+                <input type="checkbox" name="n/i" id="n/i">
+                <label >Não informar</label>
+            </span>
+            <label class="tipo-de-conta" > Tipo de conta:  Particular</label>
+            <button class="salvar-alteracoes" type="submit">Salvar alterações</button>
+        </div>
+        <div class="dados-container" >
+          <h1 class="titulo-card-contatos">Contatos</h1>
+
+          <label class="label-email">Email</label
+            ><input
+              class="input-email"
+              placeholder="email"
+              type="email"
+              name="email"
+              id="email"
+              required
+            />
+            <button class="alterar-email" type="submit">ALTERAR</button>
+            <label class="label-telefone">Telefone</label
+            ><input
+            class="input-telefone"
+              placeholder="Telefone"
+              type="tel"
+              name="telefone"
+              id="telefone"
+              required
+            />
+            <button class="alterar-telefone" type="submit">ALTERAR</button>
+
+        </div>
+        <div class="dados-enderecos" >
+          <h1 class="titulo-dados-enderecos">Endereços</h1>
+          <div class="container-endereco" >
+            <h4 class="h4-endereco" >Rua Des. José...</h4>
+            <h6 class="h6-endereco" >Apto 40<br>
+            João Pessoa . PB<br>
+            CEP: 58013-500</h6>
+          <button class="alterar-endereco" type="submit">ALTERAR</button>
+          </div>
+          <div class="add-endereco" >
+            <label class="add-endereco-label" >Adicionar Endereço</label>
+            <button class="add-endereco-btn" type="submit"><strong>+</strong></button>
+          </div>
+
+        </div>
+    </div>
+  </body>
+</html>

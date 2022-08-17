@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styleRegister.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Cadastro</title>
+
+</head>
+<body>
+    <div class="register-wrapper">
+        <div class="imagem-register">
+        </div>
+        <div class="register-form">
+            <img id="logo" src="/assets/logo3.png" alt="Logo da Casero">
+            
+            <form id="casero-register" action="">
+                
+                <div class="form-wrapper">
+                    <legend>Crie sua conta
+                        
+                        <div class="fieldset-wrapper">
+                            <label for="register-name">Nome completo:</label>
+                            <input type="text" 
+                            name="register-name" 
+                            id="register-name"
+                            placeholder="Nome Completo"
+                            required/>
+                        </div>
+
+                        <div class="fieldset-wrapper">
+                            <label for="access-email">Email:</label>
+                            <input type="email" 
+                                   name="access-email" 
+                                   id="access-email"
+                                   placeholder="Email"
+                                   required/>
+                        </div>
+
+                        <div class="data-wrapper">
+                            <div class="fieldset-wrapper">
+                                <label for="register-phone">Telefone:</label>
+                                <input type="tel" 
+                                       name="register-phone" 
+                                       id="register-phone"
+                                       placeholder="Telefone"
+                                       pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}"
+                                       maxlength="11"
+                                       required/>
+                            </div>
+    
+                            <div class="fieldset-wrapper">
+                                <label for="register-cpf">CPF:</label>
+                                <input type="number" 
+                                       name="register-cpf" 
+                                       id="register-cpf"
+                                       placeholder="CPF"
+                                       maxlength="11"
+                                       required/>
+                            </div>
+    
+                            <div class="fieldset-wrapper">
+                                <label for="register-born">Data de Nascimento:</label>
+                                <input type="date" 
+                                       name="register-born" 
+                                       id="register-born"
+                                       required/>
+                            </div>
+                        </div>
+
+                        <div class="pwd-wrapper">
+                            <div class="fieldset-wrapper">
+                                <label for="register-pwd">Sua senha <span>(A senha deve conter no mínimo 8 caracteres)</span></label>
+                                <input type="password" 
+                                name="register-pwd" 
+                                id="register-pwd"
+                                placeholder="Senha"
+                                minlength="8"
+                                required/>
+                            </div>
+    
+                            <div class="fieldset-wrapper">
+                                <label for="register-pwd">Repita a senha <span>(A senha deve conter no mínimo 8 caracteres)</span></label>
+                                <input type="password" 
+                                name="register-pwd" 
+                                id="register-pwd"
+                                placeholder="Senha"
+                                minlength="8"
+                                required/>
+                            </div>
+                        </div>
+
+
+                        <div class="local-wrapper">
+                            <div class="fieldset-wrapper">
+                                <label for="register-cep">CEP:</label>
+                                <input type="number" 
+                                name="register-cep" 
+                                id="register-cep"
+                                placeholder="CEP"
+                                maxlength="8"
+                                required/>
+                            </div>
+
+                            <div class="fieldset-wrapper">
+                                <label for="register-district">Bairro:</label>
+                                <input type="text" 
+                                name="register-district" 
+                                id="register-district"
+                                placeholder="Bairro"
+                                required/>
+                            </div>
+                            
+                            <div class="fieldset-wrapper">
+                                <label for="register-city">Cidade:</label>
+                                <input type="text" 
+                                name="register-city" 
+                                id="register-city"
+                                placeholder="Cidade"
+                                required/>
+                            </div>
+
+                            <div class="fieldset-wrapper">
+                                <label for="register-state">Estado:</label>
+                                <input type="text" 
+                                name="register-state" 
+                                id="register-state"
+                                placeholder="Estado"
+                                required/>
+                            </div>
+
+                        </div>
+                    </legend>
+                </div>
+
+                <footer>
+                    <input form="content-login"
+                           class="button"
+                           type="submit"
+                           value="Cadastre-se"
+                           id="login-submit"/>
+                        
+                        <p>Já tem uma conta? <a href="#">Entrar</a></p>
+                           
+                        </footer>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

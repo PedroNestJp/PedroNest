@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styleLogin.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>        
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Login</title>
+</head>
+<body>
+    <div class="content-login">
+        <a href="/index.html"><img src="/assets/logo3.png" alt="Logo da Casero"></a>
+        <form id="casero-login" action="">
+
+                <div class="form-wrapper">
+                    <legend>Iniciar sessão</legend>
+
+                    <div class="fieldset-wrapper">
+                        <label for="access-email">Email de acesso</label>
+                        <input type="email" 
+                               name="access-email" 
+                               id="access-email"
+                               placeholder="Email"
+                               required/>
+                    </div>
+
+                    <div class="fieldset-wrapper">
+                        <label for="password-login">Sua senha <a href="">Esqueceu sua senha?</a></label>
+                        <input type="password" 
+                               name="password-login" 
+                               id="password-login"
+                               placeholder="Senha"
+                               required/>
+                    </div>
+
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" 
+                               name="login-checkbox" 
+                               id="login-checkbox"/>
+                        <label for="login-checkbox">Lembre-me</label>
+                    </div>
+
+                    <a href="index.html">
+                        <button form="content-login"
+                           class="button"
+                           type="button"
+                           value="Entrar"
+                           id="login-submit">
+                        </button>
+                    </a>
+                </div>
+
+                <footer>
+                    <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+                </footer>
+        </form>
+    </div>
+</body>
+</html>

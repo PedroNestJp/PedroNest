@@ -1,0 +1,114 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap);
+
+.tela{
+position: relative;
+width: 1366px;
+height: 768px;
+background: #FFFFFF;
+
+}
+
+.frame-pai{
+box-sizing: border-box;
+position: absolute;
+width: 500px;
+height: 530.3px;
+left: 423px;
+top: 119px;
+
+border: 1px solid #FFF;
+border-radius: 1rem;
+background-blend-mode: luminosity;
+background-color: #FFF;
+box-shadow: 0 0.1rem 0.1rem rgba(0,0, 0, 0.5)
+}
+
+.logo{
+position: absolute;
+width: 304.41px;
+height: 80px;
+left: 521px;
+top: 159px;  
+
+}
+
+.texto1{
+position: absolute;
+width: 234.85px;
+height: 27.55px;
+left: 490.51px;
+top: 249.61px;
+
+font-family: 'Poppins', sans-serif;;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+
+color: rgba(0, 0, 0, 0.85);
+
+}
+
+.texto2{
+    position: absolute;
+width: 347px;
+height: 39px;
+left: 491px;
+top: 293px;
+
+font-family: 'Poppins', sans-serif;;
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 18px;
+
+color: #000000;
+
+opacity: 0.7;
+}
+
+.input-email{
+box-sizing: border-box;
+position: absolute;
+width: 347.11px;
+height: 50.96px;
+left: 490.51px;
+top: 345.34px;
+
+border: 1px solid rgba(0, 0, 0, 0.85);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+border-radius: 10px;
+}
+
+.enviar{
+position: absolute;
+width: 347px;
+height: 52px;
+left: 491px;
+top: 406px;
+border: #000000 solid 0px;
+    
+background: #F55A03;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+}
+.enviar:hover{
+background-color: orange;
+color: #F55A03;
+transition: 0.3s;
+}
+.text-enviar{
+position: relative;
+display: flex;
+width: 1px;
+height: 50px;
+left: 120px;
+top: -28px;
+    
+font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+    
+color: white;
+}   

@@ -1,27 +1,38 @@
 const carros = [
     {
-        nome: "nissan march",
-        cor: "Red",
-        ano: 2018
-
+        id: 1,
+        marca: "Volksvagen Polo",
+        cor: "Preto",
+        ano: 2022,
+        doAno: true
     },
     {
-        nome: "Polo",
-        cor: "Gray",
-        ano: 2018
-
+        id: 2,
+        marca: "Nissan March",
+        cor: "Vermelho",
+        ano: 2021,
+        doAno: false
     },
     {
-        nome: "Onix",
-        cor: "Black",
-        ano: 2018
-
+        id: 3,
+        marca: "Volksvagen Gol",
+        cor: "Prata",
+        ano: 2020,
+        doAno: false
     },
     {
-        nome: "nissan march",
-        cor: "White",
-        ano: 2018
-
+        id: 4,
+        marca: "Chevrolet Onix",
+        cor: "Preto",
+        ano: 2019,
+        doAno: false
+    },
+    {
+        id: 5,
+        marca: "Volksvagen Polo",
+        cor: "Branco",
+        ano: 2023,
+        doAno: true
     }
 ]
 

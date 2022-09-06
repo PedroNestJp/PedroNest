@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
     res.send('Hello World, Logos Academy')
 })
 
-app.post('/arquivo-upload', servicoDeEnvio.array('arquivo'), (req, res) => {
+app.post('/arquivo-upload', servicoDeEnvio.single('arquivo'), (req, res) => {
     const nomeDoArquivo = req.file.originalname
     const tamanhoDoArquivo = req.file.size
     res.send(`Nome do arquivo: ${nomeDoArquivo}, tamanho: ${tamanhoDoArquivo}`)

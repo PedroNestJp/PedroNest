@@ -1,25 +1,49 @@
 const express = require('express')
 const app = express()
-//const ejs = require('ejs')
-const port = 3000
-const carros = require('./carros')
+const PORT = 3000
+const carros = require('./carros.js')
+// JavaScript
+app.use(express.json());
 
-// app.get('/filter/:busca',(req,res) => {
-//     const busca = req.params.busca
-//     res.send(`sua busca foi: ${busca}`)
-// })
-
-app.get('/filter/:nome', (req,res) => {
-    const nome = req.params.nome
+app.get('/filtro/:marca', (req, res) => {
+    const marca = req.params.marca
+    console.log(marca)
     const resultado = carros.filter((carro) => {
-        return carro.nome === nome
-    }) 
-    if (resultado.lengh > 0) {
-    res.send(resultado)
+        return carro.marca === marca
+    })
+    if (resultado.length > 0) {
+        res.send(resultado)
     }
-    res.send(`ñ encontramos resultado p/ a marca: ${nome}`)
-    }) 
+    res.send(`Não encontramos nenhum carro para a marca: ${marca}`)
+})
 
-app.listen(port, () => console.log('api ok'))
+app.get('/filtro', (req, res) => {
+    const marca = req.query.marca
+    const ano = req.query.ano
+    const cor = req.query.cor
+    const doAno = req.query.doAno
 
+    const resultado = carros.filter((carro) => {
+        return carro.marca === marca || carro.ano == ano || carro.cor === cor || carro.doAno === doAno
+    })
 
+    if (resultado.length > 0) {
+        res.send(resultado)
+    }
+    res.send('Não encontramos nenhum carro com as informações informadas.')
+})
+
+app.delete('/delete/:id', (req, res) => {
+    const id = req.params.id
+    const novosCarros = carros.filter((carro) => carro.id != id)
+    res.send(novosCarros)
+})
+
+app.put('/update/:id', (req, res) => {
+    const carro = req.body
+    res.send(carro)
+})
+
+// CRUD = Create (Post), Read (Get), Update (Put) and Delete (Delete)
+
+app.listen(PORT, () => console.log('API está funcionando corretamente.'))

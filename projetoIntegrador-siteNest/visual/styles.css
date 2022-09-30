@@ -1,11 +1,12 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-.body, html{
-    
+
+.body,
+html {
+
     position: relative;
     width: 1441px;
     height: 3072px;
-    
+
     background: #FFFFFF;
 }
 
@@ -16,7 +17,7 @@
     height: 181px;
     left: 1px;
     top: 0px;
-    
+
     background: #000000;
 
 }
@@ -28,12 +29,12 @@
     height: 181px;
     left: 0px;
     top: 0px;
-    
+
     background: url(../assets/logoNest.png);
-    
+
 }
 
-img{
+img {
 
     color: black;
     width: 166px;
@@ -50,7 +51,7 @@ input {
     left: 243px;
     top: 64px;
     padding-left: 20px;
-    
+
     background: #FFFFFF;
     border-radius: 5px 0px 0px 5px;
 
@@ -64,17 +65,17 @@ input {
     left: 998px;
     top: 65px;
     border-radius: 50% 50%;
-    
+
     background: #FFFFFF;
 }
 
-.icon-profile{
+.icon-profile {
     position: absolute;
     width: 35px;
     height: 33.5px;
     left: 1005.5px;
     top: 71.5px;
-    
+
     background: url(../assets/icons/icon-perfil.png);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -93,28 +94,28 @@ input {
     font-size: 18px;
     line-height: 30px;
 
-color: whitesmoke;
+    color: whitesmoke;
 
 }
 
-.link-login{
+.link-login {
     font-style: normal;
-    font-weight:700;
+    font-weight: 700;
     text-decoration: none;
     color: #FFFFFF;
 
 }
 
-.link-cadastre-se{
+.link-cadastre-se {
 
     font-style: normal;
-    font-weight:700;
+    font-weight: 700;
     text-decoration: none;
     color: #FFFFFF;
 
 }
 
-.cart { 
+.cart {
 
     position: absolute;
     width: 50px;
@@ -122,18 +123,18 @@ color: whitesmoke;
     left: 1321px;
     top: 64px;
     border-radius: 50% 50%;
-    
+
     background: #FFFFFF;
 
 }
 
-.icon-cart{
+.icon-cart {
     position: absolute;
     width: 36px;
     height: 38px;
     left: 1327px;
     top: 71px;
-    
+
     background: url(../assets/icons/icon-cart.png);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -146,17 +147,17 @@ color: whitesmoke;
     left: 1251px;
     top: 64px;
     border-radius: 50% 50%;
-    
+
     background: #FFFDFD;
 }
 
-.icon-heart{
+.icon-heart {
     position: absolute;
     width: 40px;
     height: 40px;
     left: 1256px;
     top: 70px;
-    
+
     background: url(../assets/icons/icon-heart.png);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -168,7 +169,7 @@ color: whitesmoke;
     height: 59px;
     left: 905px;
     top: 64px;
-    
+
     background: #9C2121;
     border-radius: 0px 5px 5px 0px;
 
@@ -180,26 +181,29 @@ color: whitesmoke;
     height: 40px;
     left: 909px;
     top: 73px;
-    
+
     background: url(../assets/icons/lupa.png);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 7px;
 }
 
-.line{
+.line {
 
     position: absolute;
     width: 1440px;
     height: 10px;
     left: 1px;
     top: 181px;
-    
+
     background: #FFFFFF;
 
 }
 
-.main-content img{
+.ads-area {
+    z-index: -1;
+}
 
+img {
     position: absolute;
     width: 1440px;
     height: 837px;
@@ -207,6 +211,10 @@ color: whitesmoke;
     top: 191px;
 
 }
+
+.main-content {}
+
+
 .container {
 
     position: absolute;
@@ -214,55 +222,76 @@ color: whitesmoke;
     height: 634px;
     left: 43px;
     top: 395px;
-    
+
     background: #F5F5F5;
 }
 
 .typepc-text {
 
+    z-index: 1;
     position: absolute;
     width: 575px;
     height: 53px;
     left: 146px;
     top: 422px;
-    
+
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 900;
     font-size: 35px;
     line-height: 52px;
-    
+
+
     color: #FF0101;
 }
 
-.typepc-1{
+.typepc-1 {
 
+    z-index: 1;
     position: absolute;
-    width: 355px;
-    height: 355px;
+    width: 315px;
+    height: 300px;
     left: 146px;
     top: 508px;
-    
+
     background: url(../assets/typepc-1.png);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
 
 }
-.typepc-2{
 
+.typepc-1:hover {
+
+    filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.3));
+
+}
+
+
+.typepc-2 {
+
+    z-index: 1;
     position: absolute;
-    width: 371px;
-    height: 371px;
+    width: 320px;
+    height: 320px;
     left: 535px;
     top: 492px;
     background: url(../assets/typepc-2.png);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
 
 }
-.typepc-3{
 
+.typepc-2:hover {
+
+    filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.3));
+
+}
+
+
+.typepc-3 {
+
+    z-index: 1;
     position: absolute;
-    width: 371px;
-    height: 371px;
+    width: 320px;
+    height: 320px;
     left: 949px;
     top: 481px;
 
@@ -271,67 +300,92 @@ color: whitesmoke;
 
 }
 
-.deskTypePc-1{
-position: absolute;
-width: 236px;
-height: 45px;
-left: 206px;
-top: 863px;
+.typepc-3:hover {
 
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 900;
-font-size: 30px;
-line-height: 45px;
-/* identical to box height */
-
-
-color: #FF0101;
+    filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.3));
 
 }
-.deskTypePc-2{
 
+
+.textTypePc-1 {
+
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    width: 236px;
+    height: 45px;
+    left: 175px;
+    top: 830px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 45px;
+
+    color: #FF0101;
+
+}
+
+.textTypePc-1:hover {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.textTypePc-2 {
+
+    text-decoration: none;
+    z-index: 1;
     position: absolute;
     width: 382px;
     height: 45px;
-    left: 535px;
-    top: 863px;
-    
+    left: 515px;
+    top: 830px;
+
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 900;
     font-size: 30px;
     line-height: 45px;
     /* identical to box height */
-    
-    
+
+
     color: #FF0101;
 }
-.deskTypePc-3{
 
+.textTypePc-2:hover {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.textTypePc-3 {
+
+    text-decoration: none;
+    z-index: 1;
     position: absolute;
     width: 232px;
     height: 45px;
-    left: 1028px;
-    top: 863px;
-    
+    left: 995px;
+    top: 830px;
+
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 900;
     font-size: 30px;
     line-height: 45px;
-    
+
     color: #FF0101;
 }
 
-.main-content2 img{
+.textTypePc-3:hover {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.main-content2 img {
 
     position: absolute;
     width: 1440px;
     height: 1024px;
     left: 1px;
     top: 1024px;
-
 
 }
 
@@ -340,29 +394,31 @@ color: #FF0101;
 
     position: absolute;
     width: 1355px;
-    height: 634px;
+    height: 1024px;
     left: 43px;
-    top: 395px;
-    
+    top: 1029px;
+
     background: #F5F5F5;
 }
-.bestsellers-text{
+
+.highlights-text {
 
     position: absolute;
-    width: 486.94px;
-    height: 50.08px;
+    width: 233px;
+    height: 50px;
     left: 308px;
     top: 1046px;
-    
+
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 900;
     font-size: 35px;
     line-height: 52px;
-    
+
     color: #FF0101;
 }
-.bestsellers-1{
+
+.highlights-1 {
 
     box-sizing: border-box;
 
@@ -371,12 +427,13 @@ color: #FF0101;
     height: 467px;
     left: 258px;
     top: 1135px;
-    
+
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
-.bestsellers-2{
+
+.highlights-2 {
 
     box-sizing: border-box;
 
@@ -385,12 +442,13 @@ color: #FF0101;
     height: 467px;
     left: 612px;
     top: 1135px;
-    
+
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
-.bestsellers-3{
+
+.highlights-3 {
 
     box-sizing: border-box;
 
@@ -405,16 +463,17 @@ color: #FF0101;
     border-radius: 5px;
 }
 
-.img-bestseller-1{
+.imgs-highlights-1 {
     position: absolute;
     width: 265px;
     height: 300px;
     left: 275px;
     top: 1141px;
 
-background: url(../assets/gabinetes/gab1.png);
+    background: url(../assets/gabinetes/gab1.png);
 }
-.img-bestseller-2{
+
+.imgs-highlights-2 {
     position: absolute;
     width: 275px;
     height: 300px;
@@ -423,7 +482,8 @@ background: url(../assets/gabinetes/gab1.png);
 
     background: url(../assets/gabinetes/gab2.png);
 }
-.img-bestseller-3{
+
+.imgs-highlights-3 {
     position: absolute;
     width: 269px;
     height: 289px;
@@ -433,7 +493,7 @@ background: url(../assets/gabinetes/gab1.png);
     background: url(../assets/gabinetes/gab3.png);
 }
 
-.desc-bestseller-1{
+.desc-highlights-1 {
     position: absolute;
     width: 218.6px;
     height: 95px;
@@ -443,7 +503,8 @@ background: url(../assets/gabinetes/gab1.png);
     background-image: url(../assets/icons/desc-anuncio.png);
 
 }
-.desc-bestseller-2{
+
+.desc-highlights-2 {
     position: absolute;
     width: 218.6px;
     height: 95px;
@@ -453,18 +514,20 @@ background: url(../assets/gabinetes/gab1.png);
     background-image: url(../assets/icons/desc-anuncio.png);
 
 }
-.desc-bestseller-3{
-    position: absolute;
-width: 218.6px;
-height: 95px;
-left: 962px;
-top: 1453px;
 
-background-image: url(../assets/icons/desc-anuncio.png);
+.desc-highlights-3 {
+    position: absolute;
+    width: 218.6px;
+    height: 95px;
+    left: 962px;
+    top: 1453px;
+
+    background-image: url(../assets/icons/desc-anuncio.png);
 
 }
-.comprar-bestseller-1{
-    
+
+.buy-highlights-1 {
+
     position: absolute;
     width: 262px;
     height: 50px;
@@ -474,8 +537,64 @@ background-image: url(../assets/icons/desc-anuncio.png);
     background-image: url(../assets/icons/icon-comprar.png);
 
 }
-.comprar-bestseller-2{
-     }
-.comprar-bestseller-3 {
-    
+
+.buy-highlights-2 {
+
+    position: absolute;
+    width: 262px;
+    height: 50px;
+    left: 638px;
+    top: 2556px;
+
+    background-image: url(../assets/icons/icon-comprar.png);
+
+
 }
+
+.buy-highlights-3 {
+
+    position: absolute;
+    width: 262px;
+    height: 50px;
+    left: 980px;
+    top: 2560px;
+
+    background-image: url(../assets/icons/icon-comprar.png);
+
+}
+
+
+
+
+.main-content3 {
+
+    position: absolute;
+    width: 1355px;
+    height: 1024px;
+    left: 43px;
+    top: 2053px;
+
+    background: #F5F5F5;
+
+}
+
+.container-3 {}
+
+.bestsellers-text {
+
+    text-decoration: none;
+    position: absolute;
+    width: 403px;
+    height: 53px;
+    left: 230px;
+    top: 2070px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 52px;
+    /* identical to box height */
+
+
+    color: #FF0101;

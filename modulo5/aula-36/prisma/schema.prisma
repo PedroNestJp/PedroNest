@@ -1,0 +1,17 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = "mysql://root:@localhost:3306/teste"
+}
+
+model grupo_04 {
+  cidade String?  @db.VarChar(100)
+  nome   String?  @db.VarChar(100)
+  idade  Decimal? @db.Decimal(10, 0)
+  id     Int      @id @default(autoincrement())
+
+  @@map("grupo-04")
+}

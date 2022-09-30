@@ -9,18 +9,15 @@ background: #FFFFFF;
 }
 
 .frame-pai{
-box-sizing: border-box;
-position: absolute;
-width: 500px;
-height: 530.3px;
-left: 423px;
-top: 119px;
-
-border: 1px solid #FFF;
-border-radius: 1rem;
-background-blend-mode: luminosity;
-background-color: #FFF;
-box-shadow: 0 0.1rem 0.1rem rgba(0,0, 0, 0.5)
+    width: 32rem;
+    height: 38rem;
+    margin: 10rem auto;
+    
+    border: 1px solid #FFF;
+    border-radius: 1rem;
+    background-blend-mode: luminosity;
+    background-color: #FFF;
+    box-shadow: 0 0.1rem 0.1rem rgba(0,0, 0, 0.5)
 }
 
 .logo{

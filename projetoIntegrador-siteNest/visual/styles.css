@@ -3,10 +3,11 @@
 .body,
 html {
 
-    box-sizing: border-box;
+
+    display: flex;
     margin: 0px;
     position: relative;
-    width: 1441px;
+    width: 100%;
     height: 3072px;
 
     background: #FFFFFF;
@@ -15,7 +16,8 @@ html {
 .navbar {
 
     position: absolute;
-    width: 1440px;
+    display: flex;
+    width: 100%;
     height: 181px;
     left: 1px;
     top: 0px;
@@ -26,6 +28,7 @@ html {
 
 .logoNestHeader {
 
+    display: flex;
     position: absolute;
     width: 243px;
     height: 181px;
@@ -36,11 +39,7 @@ html {
 
 }
 
-a:hover{
 
-    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.6);
-
-}
 
 img {
 
@@ -275,7 +274,7 @@ input {
     color: #FF0101;
 }
 
-.typepc-1 a {
+.typepc-1 .img-typepc-1 {
 
     z-index: 1;
     position: absolute;
@@ -284,19 +283,20 @@ input {
     left: 146px;
     top: 508px;
 
-    background: url(../assets/typepc-1.png);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
 
 }
 
-.typepc-1:hover {
+.typepc-1:hover .img-typepc-1 {
 
+    width: 335px;
+    height: 310px;
     filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.6));
 
 }
 
 
-.typepc-2 a {
+.typepc-2 .img-typepc-2 {
 
     z-index: 1;
     position: absolute;
@@ -304,19 +304,22 @@ input {
     height: 320px;
     left: 535px;
     top: 492px;
-    background: url(../assets/typepc-2.png);
+
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
 
 }
 
-.typepc-2:hover {
+.typepc-2:hover .img-typepc-2 {
+
+    width: 330px;
+    height: 330px;
 
     filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.6));
 
 }
 
 
-.typepc-3 a {
+.typepc-3 .img-typepc-3 {
 
     z-index: 1;
     position: absolute;
@@ -326,11 +329,13 @@ input {
     top: 481px;
 
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
-    background: url(../assets/typepc-3.png);
 
 }
 
-.typepc-3:hover {
+.typepc-3:hover .img-typepc-3 {
+
+    width: 330px;
+    height: 330px;
 
     filter: drop-shadow(0px 20px 20px rgba(0, 0, 0, 0.6));
 
@@ -344,7 +349,7 @@ input {
     position: absolute;
     width: 236px;
     height: 45px;
-    left: 175px;
+    left: 185px;
     top: 830px;
 
     font-family: 'Poppins';
@@ -458,19 +463,26 @@ input {
     color: #FF0101;
 }
 
-.highlights-1 a{
+.highlights-1{
 
     box-sizing: border-box;
 
     position: absolute;
     width: 298px;
-    height: 467px;
-    left: 258px;
-    top: 1135px;
+    height: 513px;
+    left: 268px;
+    top: 1137px;
+    
 
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+
+}
+
+.img-highlights-1{
+
+    width: 265px;
+    height: 300px;
+    left: 284px;
+    top: 1180px;
 }
 
 .highlights-1:hover{
@@ -478,7 +490,7 @@ input {
 
 }
 
-.highlights-2 a{
+.highlights-2{
 
     box-sizing: border-box;
 
@@ -488,9 +500,13 @@ input {
     left: 612px;
     top: 1135px;
 
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+
+}
+
+.img-highlights-2{
+
+    width: 275px;
+    height: 300px;
 }
 
 .highlights-2:hover{
@@ -498,7 +514,7 @@ input {
 
 }
 
-.highlights-3 a{
+.highlights-3{
 
     box-sizing: border-box;
 
@@ -518,62 +534,69 @@ input {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
 
 }
-.imgs-highlights-1 a{
 
-    z-index: 1;
-    position: absolute;
-    width: 265px;
-    height: 300px;
-    left: 275px;
-    top: 1141px;
+.img-highlights-3{
 
-    background: url(../assets/gabinetes/gab1.png);
-}
-
-.imgs-highlights-2 a{
-    position: absolute;
     width: 275px;
     height: 300px;
-    left: 626px;
-    top: 1148px;
-
-    background: url(../assets/gabinetes/gab2.png);
 }
 
-.imgs-highlights-3 a{
-    position: absolute;
-    width: 269px;
-    height: 289px;
-    left: 962px;
-    top: 1142px;
 
-    background: url(../assets/gabinetes/gab3.png);
-}
 
-.desc-highlights-1 a{
+
+.oldPrice-hl-1{
 
     position: absolute;
-    width: 218.6px;
-    height: 95px;
-    left: 272px;
-    top: 1451px;
+    width: 194px;
+    height: 24px;
+    left: 317px;
+    top: 1508px;
 
-    background-image: url(../assets/icons/desc-anuncio.png);
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
 
+color: #000000;
 }
 
-.desc-highlights-2 a{
+.oldPrice-hl-2{
+
     position: absolute;
-    width: 218.6px;
-    height: 95px;
-    left: 626px;
-    top: 1452px;
-
-    background-image: url(../assets/icons/desc-anuncio.png);
+    width: 194px;
+    height: 24px;
+    left: 661px;
+    top: 1468px;
+    
 
 }
 
-.desc-highlights-3 a{
+.currentPrice-hl-2{
+
+    position: absolute;
+    width: 182px;
+    height: 36px;
+    left: 673px;
+    top: 1487px;
+    
+}
+
+.installmentPrice-hl-2{
+
+    position: absolute;
+    width: 206px;
+    height: 24px;
+    left: 661px;
+    top: 1517px;
+    
+}
+
+
+
+
+.desc-highlights-3 {
+    
     position: absolute;
     width: 218.6px;
     height: 95px;
@@ -584,35 +607,58 @@ input {
 
 }
 
-.buy-highlights-1 a{
+.buy-highlights-1 {
 
     position: absolute;
     width: 262px;
     height: 50px;
-    left: 274px;
-    top: 1542px;
+    left: 286px;
+    top: 1587px;
     border-radius: 5px;
-
+    
     background-image: url(../assets/icons/icon-comprar.png);
+    
+}
+
+.currentPrice-hl-1, .currentPrice-hl-2 , .currentPrice-hl-3{
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    
+    color: #E20100;
 
 }
 
-.buy-highlights-2 a{
+.installmentPrice-hl-1, .installmentPrice-hl-2, .oldPrice-hl-1, .oldPrice-hl-2{
+  
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: #000000;
+}
 
+.buy-highlights-2 {
+    
     position: absolute;
     width: 262px;
     height: 50px;
     left: 628px;
     top: 1543px;
     border-radius: 5px;
-
+    
     background-image: url(../assets/icons/icon-comprar.png);
-
-
+    
+    
 }
 
-.buy-highlights-3 a{
-
+.buy-highlights-3 {
+    
     position: absolute;
     width: 262px;
     height: 50px;
@@ -732,7 +778,7 @@ input {
     background: #F5F5F5;
 }
 
-.bestsellers-text {
+.bestsellers-text{
 
     text-decoration: none;
     position: absolute;
@@ -753,7 +799,7 @@ input {
 
 }
 
-.bestsellers-1 a{
+.bestsellers-1{
 
     box-sizing: border-box;
 
@@ -762,12 +808,8 @@ input {
     height: 467px;
     left: 258px;
     top: 2153px;
-    
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
 }
-.bestsellers-2 a{
+.bestsellers-2{
 
     box-sizing: border-box;
 
@@ -776,12 +818,9 @@ input {
     height: 467px;
     left: 619px;
     top: 2148px;
-    
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+
 }
-.bestsellers-3 a{
+.bestsellers-3{
 
     box-sizing: border-box;
 
@@ -790,34 +829,28 @@ input {
     height: 467px;
     left: 962px;
     top: 2153px;
-    
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+
 }
 
-.img-bestsellers-1 a{
+.img-bestsellers-1{
 
-    border: none;
     position: absolute;
     width: 265px;
     height: 300px;
     left: 275px;
     top: 2159px;
-    
-    background: url(../assets/gabinetes/gab2.png);
+
 }
-.img-bestsellers-2 a{
+.img-bestsellers-2{
 
     position: absolute;
     width: 275px;
     height: 300px;
     left: 633px;
     top: 2161px;
-    
-    background: url(../assets/gabinetes/gab3.png);
+
 }
-.img-bestsellers-3 a{
+.img-bestsellers-3{
 
     position: absolute;
     width: 269px;
@@ -825,7 +858,6 @@ input {
     left: 974px;
     top: 2160px;
     
-    background-image: url(../assets/gabinetes/gab1.png);
 }
 .desc-bestsellers-1 a{
 
@@ -892,3 +924,33 @@ input {
 }
 
 
+
+.styleBox{
+    
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.currentPrice-bs-1, .currentPrice-bs-2 , .currentPrice-bs-3{
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    
+    color: #E20100;
+
+}
+
+.installmentPrice-bs-1, .installmentPrice-bs-2, .oldPrice-bs-1, .oldPrice-bs-2{
+  
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: #000000;
+}

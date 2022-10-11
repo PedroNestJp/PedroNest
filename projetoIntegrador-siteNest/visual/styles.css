@@ -452,18 +452,21 @@ input {
     position:absolute;
     width: 40px;
     height: 40px;
-    top: 1147px;
+
 
 }
 
 .favoriteIcon-hl-1{
     left: 515px;
+    top: 1147px;
 }
 .favoriteIcon-hl-2{
     left: 866px;
+    top: 1147px;
 }
 .favoriteIcon-hl-3{
     left: 1210px;
+    top: 1147px;
 }
 
 
@@ -784,12 +787,16 @@ input {
 
 .favoriteIcon-bs-1{
     left: 515px;
+    top: 2163px;
 }
 .favoriteIcon-bs-2{
     left: 866px;
+    top: 2163px;
+    
 }
 .favoriteIcon-bs-3{
     left: 1210px;
+    top: 2163px;
 }
 
 .img-bs-1, .img-bs-2, .img-bs-3{
@@ -835,55 +842,100 @@ input {
     top: 2160px;
     
 }
-.desc-bs-1 a{
 
+.oldPrice-bs{
+    
     position: absolute;
-    width: 218.6px;
-    height: 95px;
-    left: 272px;
-    top: 2469px;
-
-    background-image: url(../assets/icons/desc-anuncio.png);
+    width: 194px;
+    height: 24px;
+    top: 2530px;
 }
-.desc-bs-2 a{
 
+.oldPrice-bs-1{
+
+    left: 317px;
+
+}
+
+.oldPrice-bs-2{
+
+    left: 669px;
+    
+}
+
+.oldPrice-bs-3{
+
+    left: 1004px;
+}
+
+.currentPrice-bs{
+    
     position: absolute;
-    width: 218.6px;
-    height: 95px;
-    left: 633px;
-    top: 2465px;
-    background-image: url(../assets/icons/desc-anuncio.png);
+    width: 182px;
+    height: 36px;
+    top: 2547px;
+}
 
+.currentPrice-bs-1{
+
+    left: 329px;
+}
+
+.currentPrice-bs-2{
+
+    left: 681px;
+    top: 2547px;
+    
+}
+
+.currentPrice-bs-3{
+
+    left: 1016px;
 
 }
-.desc-bs-3 {
 
-    z-index: 1;
+.installmentPrice-bs{
+    
     position: absolute;
-    width: 218.6px;
-    height: 95px;
-    left: 974px;
-    top: 2471px;
-    background-image: url(../assets/icons/desc-anuncio.png);
+    width: 206px;
+    height: 24px;
+    top: 2578px;
 
 }
 
-.buy-bs-1 {
+.installmentPrice-bs-1{
 
-    top: 2605px;
-    left: 277px;
-
+    left: 317px;
+    
 }
-.buy-hl:hover{
 
+.installmentPrice-bs-2{
+
+    left: 669px;
+    
+}
+
+.installmentPrice-bs-3{
+
+    left: 1004px;
+    
+}
+
+.buy-bs:hover{
+    
     cursor: pointer;
     width: 272px;
     height: 50px;
-    top: 1584px;
+    top: 2600px;    
     padding-top: 5px;
     background-color: #E20100;
 }
 
+.buy-bs-1 {
+
+    top: 2600px;
+    left: 277px;
+}
 
 .buy-bs-2 {
 
@@ -891,6 +943,7 @@ input {
     top: 2605px;
 
 }
+
 .buy-bs-3 {
 
     left: 980px;

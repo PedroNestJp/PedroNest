@@ -18,7 +18,7 @@ html {
     position: absolute;
     width: 1440px;
     height: 154px;
-    left: 1px;
+    left: 0px;
     top: 0px;
     
     background: #000000;
@@ -38,17 +38,6 @@ background: url(../assets/logo_nest_nova_page-0001__1_-removebg-preview\ 1.png);
 
 }
 
-
-
-img {
-
-    color: black;
-    width: 166px;
-    height: 166px;
-    object-fit: fill;
-
-}
-
 input {
 
     position: absolute;
@@ -56,6 +45,8 @@ input {
     height: 38px;
     left: 295px;
     top: 54px;
+    padding-left: 20px;
+    
     
     background: #FFFFFF;
     border-radius: 5px 0px 0px 5px;
@@ -78,19 +69,15 @@ input {
     width: 32px;
     height: 32px;
     top: 57px;
+
+    border-radius: 50% 50%;
+    background: #FFFFFF;
 }
 
 .icon-profile {
 
-    position: absolute;
-    width: 32px;
-    height: 32px;
     left: 992px;
-    top: 57px;
 
-    border-radius: 50% 50%;
-
-    background: #FFFFFF;
 }
 
 .text-profile {
@@ -136,49 +123,40 @@ input {
 
 .icon-shoppingCart {
 
-    position: absolute;
-    width: 32px;
-    height: 32px;
     left: 1355px;
-    top: 56px;
+
 
 }
 
 .icon-favorite {
 
-    position: absolute;
-    width: 32px;
-    height: 32px;
     left: 1310px;
-    top: 56px;
 
 }
 .button-submit{
-    
 
-    position: absolute;
-    width: 49px;
-    height: 38px;
-    left: 905px;
+    position: relative;
+    width: 55px;
+    height: 45px;
+    left: 925px;
     top: 54px;
+
+    background: #E20100;
+    border-radius: 0px 5px 5px 0px;
     
 }
 .icon-lupa {
 
-    z-index: 1;
-    position: absolute;
-    width: 49px;
-    height: 45px;
-    left: 905px;
-    top: 54px;
-    
-    background: #E20100;
-    border-radius: 0px 5px 5px 0px;
+    width: 36px;
+    height: 36px;
+    margin-top: 5px;
 
 }
 
 .line {
 
+    display: flex;
+    justify-content: center;
     position: absolute;
     width: 1441px;
     height: 41px;
@@ -187,6 +165,15 @@ input {
     
     background: #211F1F;
 
+}
+
+
+.social-media{
+
+    margin-top: 8px;
+    width: 34px;
+    height: 27px;
+    bottom: 5181px;
 }
 
 .img-bg1 {
@@ -200,16 +187,47 @@ input {
 
 }
 
-.ads {
+.ads-div{
+
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+}
+.ads-log {
     
     z-index: 1;
-    position: relative;
+    position: absolute;
     width: 174px;
     height: 150px;
     left: 630px;
     top: 235px;
     
 }
+.ads-text{
+
+    z-index: 1;
+    position: absolute;
+    width: 65px;
+    height: 45px;
+    top: 271px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 45px;
+
+    color: #FFFFFF;
+}
+.ads-text-1{
+
+    left: 409px;
+}
+.ads-text-2{
+
+    left: 968px;
+}
+
 
 .main-content {
 
@@ -295,7 +313,6 @@ input {
 
 }
 
-
 .typepc-3 .img-typepc-3 {
 
     z-index: 1;
@@ -306,7 +323,6 @@ input {
     top: 481px;
 
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
-
 }
 
 .typepc-3:hover .img-typepc-3 {
@@ -391,15 +407,6 @@ input {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.img-bg2{
-    
-    position: absolute;
-    width: 1440px;
-    height: 1024px;
-    left: 1px;
-    top: 1024px;
-}
-
 .main-content2{
 
     position: absolute;
@@ -439,6 +446,26 @@ input {
     color: #FF0101;
 }
 
+.favoriteIcon{
+    
+    z-index: 1;
+    position:absolute;
+    width: 40px;
+    height: 40px;
+    top: 1147px;
+
+}
+
+.favoriteIcon-hl-1{
+    left: 515px;
+}
+.favoriteIcon-hl-2{
+    left: 866px;
+}
+.favoriteIcon-hl-3{
+    left: 1210px;
+}
+
 
 .img-hl-1, .img-hl-2, .img-hl-3{
     
@@ -455,7 +482,6 @@ input {
     position: absolute;
     width: 298px;
     height: 513px;
-    top: 1138px;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 5px;
@@ -469,18 +495,20 @@ input {
 .hl-1{
 
     left: 268px;
-
+    top: 1138px;
 }
 
 .hl-2{
 
     left: 619px;
+    top: 1138px;
 
 }
 
 .hl-3{
 
     left: 960px;
+    top: 1138px;
 
 }
 
@@ -563,56 +591,44 @@ input {
 
 .button-buy img{
 
-    top: 1587px;
     position: absolute;
     width: 262px;
-    height: 50px;
+    height: 45px;
     border-radius: 5px;
 }
 
 .buy-hl:hover{
 
     cursor: pointer;
-    position: absolute;
     width: 272px;
-    height: 60px;
+    height: 50px;
     top: 1584px;
+    padding-top: 5px;
+    background-color: #E20100;
 }
 
 .buy-hl-1{
 
     left: 286px;
- 
+    top: 1587px;
     
 }
 .buy-hl-1:hover{
-
-    left: 281px;
     
 }
 
 .buy-hl-2 {
 
     left: 637px;
+    top: 1587px;
 
-}
-
-.buy-hl-2:hover{
-
-    left: 632px;
-    
 }
 
 .buy-hl-3{
 
     left: 978px;
+    top: 1587px;
 
-}
-
-.buy-hl-3:hover{
-
-    left: 973px;
-    
 }
 
 .currentPrice-hl-1, .currentPrice-hl-2 , .currentPrice-hl-3{
@@ -653,8 +669,6 @@ input {
     font-weight: 900;
     font-size: 35px;
     line-height: 52px;
-    /* identical to box height */
-    
     
     color: #FF0101;
 }
@@ -693,34 +707,35 @@ input {
     color: #FF0101;
 }
 
-.platform-intel a{
+.platform-intel, .platform-amd {
 
     position: absolute;
     width: 520px;
     height: 162px;
+    top: 1789px;
+    border-radius: 5px;
+
+}
+
+.platform-intel:hover, .platform-amd:hover{
+
+    position: absolute;
+    width: 530px;
+    height: 172px;
+    top: 1789px;
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 5px;
+
+}
+
+.platform-intel{
+
     left: 141px;
-    top: 1789px;
-    
-    background: url(../assets/icons/img-intel-processor.png)
 }
-.platform-amd a{
+.platform-amd {
 
-    position: absolute;
-    width: 552px;
-    height: 162px;
     left: 761px;
-    top: 1789px;
-    
-    background: url(../assets/icons/img-amd-processor.png);
-}
-
-.img-bg3{
-
-    position: absolute;
-    width: 1440px;
-    height: 1024px;
-    left: 1px;
-    top: 2048px;
 
 }
 
@@ -732,8 +747,6 @@ input {
     height: 1024px;
     left: 43px;
     top: 2053px;
-
-    background: #F5F5F5;
 
 }
 
@@ -749,14 +762,15 @@ input {
     background: #F5F5F5;
 }
 
-.bestsellers-text{
+.bs-text {
 
-    text-decoration: none;
+    z-index: 1;
     position: absolute;
-    width: 403px;
-    height: 53px;
-    left: 230px;
+    width: 350px;
+    height: 50px;
+    left: 308px;
     top: 2070px;
+
 
     font-family: 'Poppins';
     font-style: normal;
@@ -764,73 +778,64 @@ input {
     font-size: 35px;
     line-height: 52px;
 
-
-
     color: #FF0101;
 
 }
 
-.bestsellers-1{
+.favoriteIcon-bs-1{
+    left: 515px;
+}
+.favoriteIcon-bs-2{
+    left: 866px;
+}
+.favoriteIcon-bs-3{
+    left: 1210px;
+}
 
-    box-sizing: border-box;
+.img-bs-1, .img-bs-2, .img-bs-3{
+    
+    margin-top: 20%;
+    width: 293px;
+    height: 300px;
+    
+}
+.bs-1{
 
-    position: absolute;
-    width: 298px;
-    height: 467px;
     left: 258px;
     top: 2153px;
 }
-.bestsellers-2{
+.bs-2{
 
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 298px;
-    height: 467px;
     left: 619px;
     top: 2148px;
 
 }
-.bestsellers-3{
+.bs-3{
 
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 298px;
-    height: 467px;
     left: 962px;
     top: 2153px;
 
 }
 
-.img-bestsellers-1{
+.img-bs-1{
 
-    position: absolute;
-    width: 265px;
-    height: 300px;
     left: 275px;
     top: 2159px;
 
 }
-.img-bestsellers-2{
+.img-bs-2{
 
-    position: absolute;
-    width: 275px;
-    height: 300px;
     left: 633px;
     top: 2161px;
 
 }
-.img-bestsellers-3{
+.img-bs-3{
 
-    position: absolute;
-    width: 269px;
-    height: 289px;
     left: 974px;
     top: 2160px;
     
 }
-.desc-bestsellers-1 a{
+.desc-bs-1 a{
 
     position: absolute;
     width: 218.6px;
@@ -840,7 +845,7 @@ input {
 
     background-image: url(../assets/icons/desc-anuncio.png);
 }
-.desc-bestsellers-2 a{
+.desc-bs-2 a{
 
     position: absolute;
     width: 218.6px;
@@ -851,7 +856,7 @@ input {
 
 
 }
-.desc-bestsellers-3 a{
+.desc-bs-3 {
 
     z-index: 1;
     position: absolute;
@@ -863,34 +868,33 @@ input {
 
 }
 
-.buy-bestsellers-1 a{
-    position: absolute;
-    width: 262px;
-    height: 50px;
+.buy-bs-1 {
+
+    top: 2605px;
     left: 277px;
-    top: 2560px;
-    border-radius: 5px;
-    background-image: url(../assets/icons/icon-comprar.png);
-
 
 }
-.buy-bestsellers-2 a{
+.buy-hl:hover{
 
-    position: absolute;
-    width: 262px;
+    cursor: pointer;
+    width: 272px;
     height: 50px;
+    top: 1584px;
+    padding-top: 5px;
+    background-color: #E20100;
+}
+
+
+.buy-bs-2 {
+
     left: 638px;
-    top: 2556px;
-    background-image: url(../assets/icons/icon-comprar.png);
-}
-.buy-bestsellers-3 a{
+    top: 2605px;
 
-    position: absolute;
-    width: 262px;
-    height: 50px;
+}
+.buy-bs-3 {
+
     left: 980px;
-    top: 2560px;
-    background-image: url(../assets/icons/icon-comprar.png);
+    top: 2605px;
 
 }
 

@@ -16,26 +16,25 @@ html {
 .navbar {
 
     position: absolute;
-    display: flex;
-    width: 100%;
-    height: 181px;
+    width: 1440px;
+    height: 154px;
     left: 1px;
     top: 0px;
-
+    
     background: #000000;
 
 }
 
 .logoNestHeader {
 
-    display: flex;
+    z-index: 1;
     position: absolute;
-    width: 243px;
-    height: 181px;
-    left: 0px;
+    width: 174px;
+    height: 150px;
+    left: 111px;
     top: 0px;
-
-    background: url(../assets/logoNest.png);
+    
+background: url(../assets/logo_nest_nova_page-0001__1_-removebg-preview\ 1.png);
 
 }
 
@@ -53,55 +52,62 @@ img {
 input {
 
     position: absolute;
-    width: 662px;
-    height: 52px;
-    left: 243px;
-    top: 64px;
-    padding-left: 20px;
-
+    width: 610px;
+    height: 38px;
+    left: 295px;
+    top: 54px;
+    
     background: #FFFFFF;
     border-radius: 5px 0px 0px 5px;
 
 }
 
-.profile {
-
+.menu-3pontos{
+    
     position: absolute;
     width: 50px;
-    height: 50px;
-    left: 998px;
-    top: 65px;
+    height: 49px;
+    left: 44px;
+    top: 43px;
+
+}
+
+.icons-header{
+
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 57px;
+}
+
+.icon-profile {
+
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 992px;
+    top: 57px;
+
     border-radius: 50% 50%;
 
     background: #FFFFFF;
 }
 
-.icon-profile {
-    position: absolute;
-    width: 35px;
-    height: 33.5px;
-    left: 1005.5px;
-    top: 71.5px;
-
-    background: url(../assets/icons/icon-perfil.png);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-
 .text-profile {
 
     position: absolute;
-    width: 164px;
-    height: 51px;
-    left: 1062px;
-    top: 60px;
-
+    width: 142px;
+    height: 44px;
+    left: 1033px;
+    top: 56px;
+    
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
-
-    color: whitesmoke;
+    font-size: 12px;
+    line-height: 18px;
+    
+    color: #FFFFFF;
 
 }
 
@@ -123,115 +129,86 @@ input {
 
 }
 
-.cart {
+.icon-support{
+
+    left: 1265px;
+}
+
+.icon-shoppingCart {
 
     position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 1321px;
-    top: 64px;
-    border-radius: 50% 50%;
-
-    background: #FFFFFF;
+    width: 32px;
+    height: 32px;
+    left: 1355px;
+    top: 56px;
 
 }
 
-.icon-cart {
-    position: absolute;
-    width: 36px;
-    height: 38px;
-    left: 1327px;
-    top: 71px;
-
-    background: url(../assets/icons/icon-cart.png);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
-}
-
-.favorite {
+.icon-favorite {
 
     position: absolute;
-    width: 50px;
-    height: 50px;
-    left: 1251px;
-    top: 64px;
-    border-radius: 50% 50%;
-
-    background: #FFFDFD;
+    width: 32px;
+    height: 32px;
+    left: 1310px;
+    top: 56px;
 
 }
-
-.icon-heart {
-
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    left: 1256px;
-    top: 70px;
-
-    background: url(../assets/icons/icon-heart.png);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
-}
-
-.submit {
+.button-submit{
+    
 
     position: absolute;
     width: 49px;
-    height: 59px;
+    height: 38px;
     left: 905px;
-    top: 64px;
-
-    background: #9C2121;
-    border-radius: 0px 5px 5px 0px;
-
+    top: 54px;
+    
 }
-
 .icon-lupa {
 
+    z-index: 1;
     position: absolute;
-    width: 40px;
-    height: 40px;
-    left: 909px;
-    top: 73px;
+    width: 49px;
+    height: 45px;
+    left: 905px;
+    top: 54px;
+    
+    background: #E20100;
+    border-radius: 0px 5px 5px 0px;
 
-    background: url(../assets/icons/lupa.png);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 7px;
 }
 
 .line {
 
     position: absolute;
-    width: 1440px;
-    height: 10px;
-    left: 1px;
-    top: 181px;
-
-    background: #FFFFFF;
+    width: 1441px;
+    height: 41px;
+    left: 0px;
+    top: 150px;
+    
+    background: #211F1F;
 
 }
 
 .img-bg1 {
 
     position: absolute;
-    width: 1440px;
-    height: 837px;
-    left: 1px;
+    width: 1441px;
+    height: 3699px;
+    left: 0px;
     top: 191px;
+    
 
 }
 
 .ads {
-
+    
     z-index: 1;
-    position: absolute;
-    width: 280px;
-    height: 176px;
-    left: 581px;
-    top: 205px;
-
-    background-image: url(../assets/logoNest.png);
+    position: relative;
+    width: 174px;
+    height: 150px;
+    left: 630px;
+    top: 235px;
+    
 }
 
 .main-content {
@@ -445,9 +422,8 @@ input {
     background: #F5F5F5;
 }
 
-.highlights-text {
+.hl-text {
 
-    z-index: 1;
     position: absolute;
     width: 233px;
     height: 50px;
@@ -463,160 +439,179 @@ input {
     color: #FF0101;
 }
 
-.highlights-1{
+
+.img-hl-1, .img-hl-2, .img-hl-3{
+    
+    margin-top: 20%;
+    width: 293px;
+    height: 300px;
+    
+}
+
+.styleBox{
 
     box-sizing: border-box;
 
     position: absolute;
     width: 298px;
     height: 513px;
-    left: 268px;
-    top: 1137px;
-    
-
-
-}
-
-.img-highlights-1{
-
-    width: 265px;
-    height: 300px;
-    left: 284px;
-    top: 1180px;
-}
-
-.highlights-1:hover{
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
-
-}
-
-.highlights-2{
-
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 298px;
-    height: 467px;
-    left: 612px;
-    top: 1135px;
-
-
-}
-
-.img-highlights-2{
-
-    width: 275px;
-    height: 300px;
-}
-
-.highlights-2:hover{
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
-
-}
-
-.highlights-3{
-
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 298px;
-    height: 467px;
-    left: 950px;
-    top: 1135px;
-
+    top: 1138px;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
-
-.highlights-3:hover{
-
+.styleBox:hover{
+    
+    cursor:pointer;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+}
+
+.hl-1{
+
+    left: 268px;
 
 }
 
-.img-highlights-3{
+.hl-2{
 
-    width: 275px;
-    height: 300px;
+    left: 619px;
+
 }
 
+.hl-3{
 
+    left: 960px;
 
+}
 
-.oldPrice-hl-1{
-
+.oldPrice-hl{
+    
     position: absolute;
     width: 194px;
     height: 24px;
-    left: 317px;
     top: 1508px;
+}
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
+.oldPrice-hl-1{
 
-color: #000000;
+    left: 317px;
+
 }
 
 .oldPrice-hl-2{
 
-    position: absolute;
-    width: 194px;
-    height: 24px;
-    left: 661px;
-    top: 1468px;
+    left: 669px;
     
+}
 
+.oldPrice-hl-3{
+
+    left: 1004px;
+}
+
+.currentPrice-hl{
+    
+    position: absolute;
+    width: 182px;
+    height: 36px;
+    top: 1531px;
+}
+
+.currentPrice-hl-1{
+
+    left: 329px;
 }
 
 .currentPrice-hl-2{
 
+    left: 681px;
+    
+}
+
+.currentPrice-hl-3{
+
+    left: 1016px;
+
+}
+
+.installmentPrice-hl{
+    
     position: absolute;
-    width: 182px;
-    height: 36px;
-    left: 673px;
-    top: 1487px;
+    width: 206px;
+    height: 24px;
+    top: 1561px;
+
+}
+
+.installmentPrice-hl-1{
+
+    left: 317px;
     
 }
 
 .installmentPrice-hl-2{
 
-    position: absolute;
-    width: 206px;
-    height: 24px;
-    left: 661px;
-    top: 1517px;
+    left: 669px;
     
 }
 
+.installmentPrice-hl-3{
 
-
-
-.desc-highlights-3 {
+    left: 1004px;
     
-    position: absolute;
-    width: 218.6px;
-    height: 95px;
-    left: 962px;
-    top: 1453px;
-
-    background-image: url(../assets/icons/desc-anuncio.png);
-
 }
 
-.buy-highlights-1 {
+.button-buy img{
 
+    top: 1587px;
     position: absolute;
     width: 262px;
     height: 50px;
-    left: 286px;
-    top: 1587px;
     border-radius: 5px;
+}
+
+.buy-hl:hover{
+
+    cursor: pointer;
+    position: absolute;
+    width: 272px;
+    height: 60px;
+    top: 1584px;
+}
+
+.buy-hl-1{
+
+    left: 286px;
+ 
     
-    background-image: url(../assets/icons/icon-comprar.png);
+}
+.buy-hl-1:hover{
+
+    left: 281px;
+    
+}
+
+.buy-hl-2 {
+
+    left: 637px;
+
+}
+
+.buy-hl-2:hover{
+
+    left: 632px;
+    
+}
+
+.buy-hl-3{
+
+    left: 978px;
+
+}
+
+.buy-hl-3:hover{
+
+    left: 973px;
     
 }
 
@@ -632,7 +627,8 @@ color: #000000;
 
 }
 
-.installmentPrice-hl-1, .installmentPrice-hl-2, .oldPrice-hl-1, .oldPrice-hl-2{
+.installmentPrice-hl-1, .installmentPrice-hl-2, .installmentPrice-hl-3,
+.oldPrice-hl-1, .oldPrice-hl-2, .oldPrice-hl-3{
   
     font-family: 'Inter';
     font-style: normal;
@@ -643,31 +639,6 @@ color: #000000;
     color: #000000;
 }
 
-.buy-highlights-2 {
-    
-    position: absolute;
-    width: 262px;
-    height: 50px;
-    left: 628px;
-    top: 1543px;
-    border-radius: 5px;
-    
-    background-image: url(../assets/icons/icon-comprar.png);
-    
-    
-}
-
-.buy-highlights-3 {
-    
-    position: absolute;
-    width: 262px;
-    height: 50px;
-    left: 966px;
-    top: 1542px;
-    border-radius: 5px;
-    background-image: url(../assets/icons/icon-comprar.png);
-
-}
 
 .text-buy-by-platform{
 
@@ -925,12 +896,7 @@ color: #000000;
 
 
 
-.styleBox{
-    
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-}
+
 
 .currentPrice-bs-1, .currentPrice-bs-2 , .currentPrice-bs-3{
 

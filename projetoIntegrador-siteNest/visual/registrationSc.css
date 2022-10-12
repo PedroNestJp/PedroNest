@@ -89,3 +89,136 @@
     opacity: 0.5;
     
 }
+
+.line {
+
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 1441px;
+    height: 70px;
+    left: 0px;
+    top: 1011px;
+    
+    background: #211F1F;
+
+}
+
+.footer{
+
+    position: absolute;
+    width: 1440px;
+    height: 415px;
+    left: 0px;
+    top: 1081px;
+    
+    background: #000000;
+}
+.info-footer{
+
+    width: 1314px;
+    height: 199px;
+    left: 85px;
+    top: 1126px;
+    border: #F5F5F5 solid;
+}
+
+.social-media{
+
+    margin-top: 8px;
+    width: 34px;
+    height: 27px;
+    bottom: 5181px;
+}
+
+.logoNestFooter{
+
+
+    width: 189px;
+    height: 204px;
+    left: 57px;
+    top: 1267px;
+    
+    background: url(logo_nest_nova_page-0001__1_-removebg-preview);
+}
+
+.inputs{
+
+    box-sizing: border-box;
+
+    padding-left: 20px;
+    position: absolute;
+    width: 370px;
+    height: 45px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 3px;
+}
+
+.input-name{
+
+    left: 340px;
+    top: 419px;
+}
+.input-cpf{
+
+    left: 729px;
+    top: 419px;
+
+}
+.input-birthDate{
+
+    left: 340px;
+    top: 481px;
+
+}
+.input-tell{
+
+    left: 729px;
+    top: 481px;
+
+}
+
+.input-email{
+
+    box-sizing: border-box;
+
+    padding-left: 20px;
+    position: absolute;
+    width: 760px;
+    height: 45px;
+    left: 340px;
+    top: 543px;
+
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 3px;
+
+}
+
+.input-password{
+
+    left: 340px;
+    top: 599px;
+
+}
+
+.input-repeatPassword{
+
+    left: 729px;
+    top: 599px;
+
+}
+
+input::placeholder {
+ 
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: rgba(226, 1, 0, 0.6);
+
+}

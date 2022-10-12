@@ -407,6 +407,22 @@ input {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.icon-chat{
+    z-index: 1;
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    left: 1287px;
+    top: 549px;
+}
+
+.icon-chat:hover{
+    width: 110px;
+    height: 110px;
+    
+
+}
+
 .main-content2{
 
     position: absolute;
@@ -647,7 +663,7 @@ input {
 }
 
 .installmentPrice-hl-1, .installmentPrice-hl-2, .installmentPrice-hl-3,
-.oldPrice-hl-1, .oldPrice-hl-2, .oldPrice-hl-3{
+.oldPrice-hl-1, .oldPrice-hl-2, .oldPrice-hl-3 {
   
     font-family: 'Inter';
     font-style: normal;
@@ -753,8 +769,8 @@ input {
 
 }
 
-.container-3 {
-    
+.container-3 {    
+
     cursor: auto;
     position: absolute;
     width: 1355px;
@@ -840,11 +856,29 @@ input {
 
     left: 974px;
     top: 2160px;
-    
 }
 
-.oldPrice-bs{
+.installmentPrice-bs-1, .installmentPrice-bs-2, .installmentPrice-bs-3,
+.oldPrice-bs-1 , .oldPrice-bs-2 , .oldPrice-bs-3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
     
+    color: #000000;
+}
+.currentPrice-bs-1, .currentPrice-bs-2 , .currentPrice-bs-3{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    
+    color: #E20100;
+}
+
+.oldPrice{
     position: absolute;
     width: 194px;
     height: 24px;
@@ -852,15 +886,13 @@ input {
 }
 
 .oldPrice-bs-1{
-
-    left: 317px;
-
+    left: 314px;
 }
 
 .oldPrice-bs-2{
 
     left: 669px;
-    
+
 }
 
 .oldPrice-bs-3{
@@ -868,8 +900,15 @@ input {
     left: 1004px;
 }
 
+.currentPrice{
+    position: absolute;
+    width: 182px;
+    height: 36px;
+    top: 2547px;
+}
+
 .currentPrice-bs{
-    
+
     position: absolute;
     width: 182px;
     height: 36px;
@@ -877,15 +916,15 @@ input {
 }
 
 .currentPrice-bs-1{
-
-    left: 329px;
+    left: 326px;
+    top: 2547px;
 }
 
 .currentPrice-bs-2{
 
     left: 681px;
     top: 2547px;
-    
+
 }
 
 .currentPrice-bs-3{
@@ -894,8 +933,8 @@ input {
 
 }
 
-.installmentPrice-bs{
-    
+
+.installmentPrice{
     position: absolute;
     width: 206px;
     height: 24px;
@@ -906,23 +945,23 @@ input {
 .installmentPrice-bs-1{
 
     left: 317px;
-    
+
 }
 
 .installmentPrice-bs-2{
 
     left: 669px;
-    
+
 }
 
 .installmentPrice-bs-3{
 
     left: 1004px;
-    
+
 }
 
 .buy-bs:hover{
-    
+
     cursor: pointer;
     width: 272px;
     height: 50px;
@@ -949,31 +988,142 @@ input {
     left: 980px;
     top: 2605px;
 
+}.d-text{
+
+    position: absolute;
+    width: 354px;
+    height: 53px;
+    left: 190px;
+    top: 2751px;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 52px;
+
+    color: #E20100;
+
 }
 
+.styleBox-bbd{
 
+    position: absolute;
+    width: 218px;
+    height: 120px;
+    left: 166px;
+    top: 2831px;
+    
+    background: #FFFFFF;
+    border-radius: 5px;
+}
 
+.bbd-1{
 
+    left: 166px;
+    
+}
+.bbd-2{
 
-.currentPrice-bs-1, .currentPrice-bs-2 , .currentPrice-bs-3{
+    left: 477px;
 
+}
+.bbd-3{
+
+    left: 788px;
+
+}
+.bbd-4{
+
+    left: 1099px;
+
+}
+
+.bbd-text{
+
+    display: flex;
+    justify-content: flex-end;
+    width: 173px;
+    height: 24px;
+    top: 2842px;
+    
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 20px;
+    line-height: 24px;
     
     color: #E20100;
 
 }
 
-.installmentPrice-bs-1, .installmentPrice-bs-2, .oldPrice-bs-1, .oldPrice-bs-2{
-  
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
+
+.img-bbd-1{
+
+    position: absolute;
+    width: 221px;
+    height: 114px;
+    left: 156px;
+    top: 2867px;
+}
+
+.img-bbd-2{
+
+    position: absolute;
+    width: 243px;
+    height: 122px;
+    left: 466px;
+    top: 2854px;
+}
+
+.img-bbd-3{
     
-    color: #000000;
+    position: absolute;
+    width: 241px;
+    height: 229px;
+    left: 775.12px;
+    top: 2820px;
+    
+}
+.img-bbd-4{
+
+    position: absolute;
+    width: 240px;
+    height: 131px;
+    left: 1083px;
+    top: 2866px;
+
+}
+
+.line-2{
+
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 1441px;
+    height: 70px;
+    left: 0px;
+    top: 3190px;
+    
+    background: #211F1F;
+}
+
+.footer{
+
+    position: absolute;
+    width: 1440px;
+    height: 415px;
+    left: 1px;
+    top: 3260px;
+    
+    background: #000000;
+}
+
+.info-footer{
+
+    width: 1314px;
+    height: 199px;
+    left: 86px;
+    top: 3305px;
+    border: #F5F5F5 solid;
 }

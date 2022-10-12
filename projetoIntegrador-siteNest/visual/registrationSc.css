@@ -1,0 +1,91 @@
+.body
+{
+    position: relative;
+    width: 1440px;
+    height: 1500px;
+    
+    background: #FFFFFF;
+
+}
+.navbar {
+
+    position: absolute;
+    width: 1440px;
+    height: 154px;
+    left: 0px;
+    top: 0px;
+    
+    background-color: #000000;
+
+}
+
+.logoNestHeader {
+
+    position: absolute;
+    width: 174px;
+    height: 181px;
+    left: 0px;
+    top: 0px;
+    
+    background: url(../assets/logo_nest_nova_page-0001__1_-removebg-preview\ 1.png);
+
+}
+
+.icon-profile {
+
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 1158px;
+    top: 74px;
+
+}
+
+.text-profile {
+
+    position: absolute;
+    width: 142px;
+    height: 44px;
+    left: 1203px;
+    top: 74px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    
+    color: #FFFFFF;
+
+}
+
+.link-login {
+
+    font-style: normal;
+    font-weight: 700;
+    text-decoration: none;
+    color: #FFFFFF;
+
+}
+
+.link-cadastre-se {
+
+    font-style: normal;
+    font-weight: 700;
+    text-decoration: none;
+    color: #FFFFFF;
+
+}
+
+.content{
+
+    position: absolute;
+    width: 1440px;
+    height: 830px;
+    left: 0px;
+    top: 181px;
+    
+    background: #FFFFFF;
+    opacity: 0.5;
+    
+}

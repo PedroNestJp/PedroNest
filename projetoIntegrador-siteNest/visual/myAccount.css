@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.body,
+html {
+
+    box-sizing: border-box;
+
+    position: relative;
+    width: 1440px;
+    height: 1500px;
+    
+    background: #F5F5F5;
+    border: 1px solid #000000;
+
+}
+.navbar {
+
+    position: absolute;
+    width: 1440px;
+    height: 118px;
+    left: 0px;
+    top: 0px;
+    
+    background: #000000;
+
+}
+
+.logoNestHeader {
+
+    position: absolute;
+    width: 135px;
+    height: 100px;
+    left: 205px;
+    top: 10px;
+
+}
+
+.icon-profile {
+
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 1158px;
+    top: 45px;
+
+}
+
+.text-profile {
+
+    position: absolute;
+    width: 142px;
+    height: 44px;
+    left: 1203px;
+    top: 45px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    
+    color: #FFFFFF;
+
+}
+
+.link-login {
+
+    font-style: normal;
+    font-weight: 700;
+    text-decoration: none;
+    color: #FFFFFF;
+
+}
+
+.link-cadastre-se {
+
+    font-style: normal;
+    font-weight: 700;
+    text-decoration: none;
+    color: #FFFFFF;
+
+}
+.content h1{
+
+    position: absolute;
+    width: 187px;
+    height: 38px;
+    left: 626px;
+    top: 201px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 38px;
+    /* identical to box height */
+    
+    
+    color: #000000;
+}
+
+.boxes-myAccount{
+    
+}
+
+.boxs{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 216px;
+    height: 140px;
+    top: 372px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+.myRegistration{
+
+    left: 210px;
+}
+
+.changePassword{
+    left: 482px;
+}
+.myRequests{
+    left: 749px;
+}
+.myFavorites{
+    left: 1021px;
+}
+
+.txs{
+
+    position: absolute;
+    top: 524px;
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    
+    
+    color: #000000;
+}
+
+.txMyRegistration{
+
+    left: 262px;
+    width: 140px;
+    height: 21px;
+}
+.txChangePassword {
+
+     left: 534px;
+    width: 140;
+    height: 21px;
+}
+.txMyRequests{
+
+    width: 140;
+    height: 21;
+    left: 801px;
+}
+.txMyFavorites{
+
+    width: 123px;
+    height: 21px;
+    left: 1067px;
+}
+
+.iconMyRequests{
+    
+
+}

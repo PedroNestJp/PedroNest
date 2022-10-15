@@ -163,9 +163,12 @@ html {
     border-radius: 3px;
 }
 
+input{
+    padding-left: 20px;
+}
+
 input::placeholder{
 
-    padding-left: 20px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;

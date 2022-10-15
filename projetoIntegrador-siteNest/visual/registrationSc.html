@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="registrationSc.css">
+    <link rel="stylesheet" href="registrationSc.css" >
     <title> REGISTRATION SCREEN </title>
 </head>
 
 <body class="body">
     <div class="navbar"> 
-        <span class="logoNestHeader" id="logoNestHeader" title="logoNestHeader"  alt="logoNestHeader">
-        </span>
+        <img class="logoNestHeader" id="logoNestHeader" title="logoNestHeader"  alt="logoNestHeader" src="../assets/logo_nest_nova_page-0001__1_-removebg-preview 1.png" alt="">
+        
         <span> 
             <a href="#"> 
                 <img class="icon-profile icons-header" src="../assets/icons/icon-profile.png" alt=""> 
@@ -19,17 +19,34 @@
         </span>
         <span class="text-profile">
                     Faça seu
-            <a id="link-login-header" title="link-login-header" class="link-login" href="#">
+            <a id="link-login-header" title="link-login-header" class="link-login" href="http://127.0.0.1:5500/visual/login.html">
                     LOGIN
             </a>
                     ou
-            <a id="link-cadastre-se" title="link-cadastre-se" class="link-cadastre-se" href="#">
+            <a id="link-cadastre-se" title="link-cadastre-se" class="link-cadastre-se" href="http://127.0.0.1:5500/visual/registrationSc.html">
                     CADASTRE-SE
             </a>
         </span>
     </div>
+    
     <div class="content">
-
+        <div>
+            <h1 class="title"> CRIAR MINHA CONTA </h1>
+        </div> 
+        <form action="">
+            <div class="typePerson"> </div>
+            <div class="typePerson1"> PESSOA FÍSICA</div>
+            <input class="circle-typePerson1" type="radio" checked>
+            </input>
+            <div class="typePerson2"> PESSOA JURÍDICA 
+            </div>
+            <a href="http://127.0.0.1:5500/visual/registrationScPj.html">
+            <input class="circle-typePerson2" type="radio" >
+            
+            </input>
+            
+                    
+        </form>
         <div>
             <div> <input class="inputs input-name" placeholder="Nome completo*:" type="text" name="name" id="name"> </div>
             <div> <input class="inputs input-cpf" placeholder="CPF*:" type="number" name="cpf" id="cpf"> </div>
@@ -37,9 +54,28 @@
             <div> <input class="inputs input-tell" placeholder="Celular*:" type="number" name="tell" id="tell"></div>
             <div> <input class="input input-email" placeholder="E-mail*:" type="text" name="text" id="text"></div>
             <div> <input class="inputs input-password" placeholder="Senha*:" type="password" name="password" id="password"></div>
-            <div> <input class="inputs input-repeatPassword" placeholder="Repetir Senha*:" type="password" name="repeatPassword" id="repeatPassword"></div>
+            <div> 
+                 <input class="inputs input-repeatPassword" placeholder="Repetir Senha*:" 
+                        type="password" name="repeatPassword" id="repeatPassword">
+                <button class="eye-off" tabindex="-1" > </button>
+                    <img class="img-eye-input-password"  src="../assets/icons/icon-eye-off.png" alt=""> 
+            </div>
         </div>
 
+        <h2 class="required-field" > (*) Campos obrigatórios </h2>
+        <h2 class="accept-terms-1">
+            <input type="checkbox"> Quero receber ofertas e novidades por e-mail, SMS ou WhatsApp  
+        </h2>
+        <h2 class="accept-terms-2"> 
+           <input type="checkbox" > Li e estou de acordo com as políticas da empresa e políticas de privacidade.* 
+        </h2>
+
+
+        <a href="#" target="_blank" rel="noopener noreferrer">
+            <button class="creat-account" type="submit" > 
+                <span class="creat-account-text"> CRIAR CONTA </span> 
+            </button>
+        </a>
         <div class="line">
             <span> 
                 <a target="_blank" href="https://www.facebook.com/nestinformatica/"> 

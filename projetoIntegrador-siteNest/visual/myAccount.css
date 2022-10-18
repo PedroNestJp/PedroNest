@@ -4,7 +4,7 @@
 html {
 
     box-sizing: border-box;
-
+    margin: 0px;
     position: relative;
     width: 1440px;
     height: 1500px;
@@ -102,8 +102,12 @@ html {
 .boxes-myAccount{
     
 }
+.boxes-myAccount:hover{
+
+}
 
 .boxs{
+    padding: 20px;
     display: flex;
     justify-content: center;
     position: absolute;
@@ -111,9 +115,15 @@ html {
     height: 140px;
     top: 372px;
     background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
     border-radius: 5px;
 }
+
+.boxs:hover{
+    cursor: pointer;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+}
+
 .myRegistration{
 
     left: 210px;
@@ -132,7 +142,10 @@ html {
 .txs{
 
     position: absolute;
-    top: 524px;
+    margin-left: 22px;
+    width: 140px;
+    height: 21px;
+    top: 570px;
     
     font-family: 'Poppins';
     font-style: normal;
@@ -148,25 +161,18 @@ html {
 .txMyRegistration{
 
     left: 262px;
-    width: 140px;
-    height: 21px;
+ 
 }
 .txChangePassword {
 
-     left: 534px;
-    width: 140;
-    height: 21px;
+    left: 534px;
 }
 .txMyRequests{
 
-    width: 140;
-    height: 21;
     left: 801px;
 }
 .txMyFavorites{
 
-    width: 123px;
-    height: 21px;
     left: 1067px;
 }
 

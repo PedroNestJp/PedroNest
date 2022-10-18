@@ -18,5 +18,5 @@ app.post('/usuarios', async (req,res)=> {
 
 
 app.listen(PORT, ()=> {
- console.log(`listening on port: ${PORT}`);
+ console.log(`listening on port: ${PORT}`)
 })

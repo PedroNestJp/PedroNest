@@ -1,6 +1,9 @@
 const express = require('express')
 const app = express()
 const PORT = 3000
+const { PrismaClient } = require('@prisma/client')
+const prisma = new PrismaClient()
+
 
 app.get ('/', (req, res)=> {
     res.send('hi Pedro')
@@ -17,5 +20,5 @@ app.get ('/usuarios', (req, res)=> {
 })
 
 app.listen (PORT, ()=>{
-    console.log(`✔ serviço rodando na porta: ${PORT}`)
+    console.log(`✔ serviço rodando em: http://localhost:${PORT}`)
 })

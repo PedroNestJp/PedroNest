@@ -24,6 +24,8 @@ model usuarios {
   email          String    @db.VarChar(100)
   senha          String    @db.VarChar(100)
   repetirSenha   String    @db.VarChar(100)
+
+  @@unique([cpf, email], map: "usuarios_un")
 }
 
 model usuariospj {
@@ -36,4 +38,6 @@ model usuariospj {
   senha              String @db.VarChar(100)
   repetirSenha       String @db.VarChar(100)
   id                 Int    @id @default(autoincrement())
+
+  @@unique([Cnpj, IncriEstadual, email], map: "usuariospj_un")
 }

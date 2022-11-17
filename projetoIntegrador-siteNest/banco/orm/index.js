@@ -10,12 +10,15 @@ app.get ('/', (req, res)=> {
 
 })
 
-app.get ('/usuarios', (req, res)=> {
-    res.send([{nome: 'Pedro', email:'pedro@gmail', senha:'112345'},
-        {nome: 'silva', email:'pedro@gmail', senha:'112345'},
-        {nome: 'pontes', email:'pedro@gmail', senha:'112345'}
-    ])
+app.get ('/usuarios', async (req, res)=> {
+    const usuarios = await prisma.usuarios.findMany()
+    res.send(usuarios)
 
+})
+
+app.get ('/usuariospj', async (req, res)=> {
+    const usuariospj = await prisma.usuariospj.findMany()
+    res.send(usuariospj)
 
 })
 

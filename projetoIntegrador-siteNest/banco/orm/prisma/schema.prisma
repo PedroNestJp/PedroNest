@@ -1,0 +1,39 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = "mysql://root:@localhost:3306/BancoNest"
+}
+
+model produtos {
+  id        Int     @id @default(autoincrement())
+  nome      String  @db.VarChar(100)
+  descricao String? @db.VarChar(254)
+  categoria String  @db.VarChar(30)
+  preco     Float   @db.Float
+}
+
+model usuarios {
+  id             Int       @id @default(autoincrement())
+  nomeCompleto   String    @db.VarChar(200)
+  cpf            String    @db.VarChar(100)
+  dataNascimento DateTime? @db.Date
+  celular        String?   @db.VarChar(100)
+  email          String    @db.VarChar(100)
+  senha          String    @db.VarChar(100)
+  repetirSenha   String    @db.VarChar(100)
+}
+
+model usuariospj {
+  nomeFantasia       String @db.VarChar(100)
+  razaoSocial        String @db.VarChar(200)
+  Cnpj               String @db.VarChar(16)
+  IncriEstadual      String @db.VarChar(10)
+  nomeCompRespCompra String @db.VarChar(200)
+  email              String @db.VarChar(100)
+  senha              String @db.VarChar(100)
+  repetirSenha       String @db.VarChar(100)
+  id                 Int    @id @default(autoincrement())
+}

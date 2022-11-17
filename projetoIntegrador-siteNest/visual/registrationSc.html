@@ -9,45 +9,39 @@
 </head>
 
 <body class="body">
-    <div class="navbar"> 
-        <a href="./homeSc.html" rel="noopener noreferrer">
-        <img class="logoNestHeader" id="logoNestHeader" title="logoNestHeader"  alt="logoNestHeader" src="../assets/logo_nest_nova_page-0001__1_-removebg-preview 1.png" alt="">
-        </a>
-        <span> 
-            <a href="./myAccount.html"> 
-                <img class="icon-profile icons-header" src="../assets/icons/icon-profile.png" alt=""> 
+    <div class="header">
+        <div class="navbar"> 
+            <a href="./homeSc.html" rel="noopener noreferrer">
+            <img class="logoNestHeader" id="logoNestHeader" title="logoNestHeader"  alt="logoNestHeader" src="../assets/logo_nest_nova_page-0001__1_-removebg-preview 1.png" alt="">
             </a>
-        </span>
-        <span class="text-profile">
+            <span> 
+                <a href="./myAccount.html"> 
+                    <img class="icon-profile icons-header" src="../assets/icons/icon-profile.png" alt=""> 
+                </a>
+            </span>
+            <span class="text-profile">
                     Faça seu
-            <a id="link-login-header" title="link-login-header" class="link-login" href="./login.html">
+                <a id="link-login-header" title="link-login-header" class="link-login" href="./login.html">
                     LOGIN
-            </a>
+                </a>
                     ou
-            <a id="link-cadastre-se" title="link-cadastre-se" class="link-cadastre-se" href="./registrationSc.html">
+                <a id="link-cadastre-se" title="link-cadastre-se" class="link-cadastre-se" href="./registrationSc.html">
                     CADASTRE-SE
-            </a>
-        </span>
+                </a>
+            </span>
+        </div>
     </div>
     
     <div class="content">
-        <div>
-            <h1 class="title"> CRIAR MINHA CONTA </h1>
-        </div> 
-        <form action="">
+                <h1 class="title"> CRIAR MINHA CONTA </h1>
             <div class="typePerson"> </div>
             <div class="typePerson1"> PESSOA FÍSICA</div>
             <input class="circle-typePerson1" type="radio" checked>
-            </input>
+            <a class="link-person1" href="./registrationSc.html"></a>
             <div class="typePerson2"> PESSOA JURÍDICA 
             </div>
-            <a href="http://127.0.0.1:5500/visual/registrationScPj.html">
-            <input class="circle-typePerson2" type="radio" >
-            
-            </input>
-            
-                    
-        </form>
+            <input class="circle-typePerson2" type="radio">
+            <a class="link-person2" href="./registrationScPj.html" ></a>
         <div>
             <div> <input class="inputs input-name" placeholder="Nome completo*:" type="text" name="name" id="name"> </div>
             <div> <input class="inputs input-cpf" placeholder="CPF*:" type="number" name="cpf" id="cpf"> </div>

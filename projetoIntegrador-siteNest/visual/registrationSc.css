@@ -100,6 +100,15 @@ html {
     
 }
 
+.link-person2{
+
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 705px;
+    top: 150px;
+}
+
 .typePerson1{
     
     position: absolute;

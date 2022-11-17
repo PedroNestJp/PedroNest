@@ -2,7 +2,6 @@
 .body,
 html {
 
-
     display: flex;
     margin: 0px;
     position: relative;
@@ -424,8 +423,8 @@ input {
     position: fixed;
     width: 100px;
     height: 100px;
-    left: 1287px;
-    top: 550px;
+    left: 35px;
+    top: 500px;
 
 }
 

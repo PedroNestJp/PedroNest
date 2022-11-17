@@ -98,6 +98,14 @@ html {
 
 }
 
+.link-person1{
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    left: 490px;
+    top: 220px;
+}
+
 .typePerson1{
 
     position: absolute;

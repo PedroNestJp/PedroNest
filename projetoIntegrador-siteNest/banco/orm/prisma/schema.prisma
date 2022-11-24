@@ -12,7 +12,7 @@ model produtos {
   nome      String  @db.VarChar(100)
   descricao String? @db.VarChar(254)
   categoria String  @db.VarChar(30)
-  preco     Float   @db.Float
+  preco     String  @db.VarChar(12)
 }
 
 model usuarios {
@@ -31,13 +31,13 @@ model usuarios {
 model usuariospj {
   nomeFantasia       String @db.VarChar(100)
   razaoSocial        String @db.VarChar(200)
-  Cnpj               String @db.VarChar(16)
-  IncriEstadual      String @db.VarChar(10)
+  cnpj               String @db.VarChar(25)
+  inscriEstadual     String @db.VarChar(12)
   nomeCompRespCompra String @db.VarChar(200)
   email              String @db.VarChar(100)
   senha              String @db.VarChar(100)
   repetirSenha       String @db.VarChar(100)
   id                 Int    @id @default(autoincrement())
 
-  @@unique([Cnpj, IncriEstadual, email], map: "usuariospj_un")
+  @@unique([cnpj, inscriEstadual, email], map: "usuariospj_un")
 }

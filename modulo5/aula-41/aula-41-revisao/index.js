@@ -7,19 +7,15 @@ const prisma = new PrismaClient()
 
 app.use(express.json())
 
-app.post('/produtos', async (req,res)=>{
+app.post('/usuarios', async (req,res)=>{
     const data = req.body
-    const produto = await prisma.produtos.create({data})
-    try { 
-        if(produto) {res.status(200).send(`O ${produto.descricao} foi criado com sucesso ✅`)}
-        
-    } catch (error) {
-        res.send("Algo de errado não está certo")
-    }
+    const produto = await prisma.produtos.create({data}) 
+    if(produto) { res.status(200).send(`O ${produto.descricao} foi criado com sucesso ✅`)}
+
 })
 
-app.get('/produtos', async(req,res) =>{
-    const produtos = await prisma.produtoss.findMany()
+app.get('/usuarios', async (req,res) =>{
+    const produtos = await prisma.produtos.findMany()
         if(produtos){ res.status(200).send(produtos)}
         res.status(404).send(`${produtos} nada encontrado`)
 })
@@ -54,4 +50,3 @@ app.delete('/produtos/:id', async (req,res)=>{
     
 })
 
-app.listen(PORT, console.log( `serviço rodando na porta :${PORT}`))

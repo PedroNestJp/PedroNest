@@ -4,11 +4,11 @@ generator client {
 
 datasource db {
   provider = "mysql"
-  url      = "mysql://root:@localhost:3306/BancoNest"
+  url      = env("DATABASE_URL")
 }
 
 model produtos {
-  id        Int     @id @default(autoincrement())
+  id        Int     @id
   nome      String? @db.VarChar(50)
   descricao String? @db.VarChar(254)
   categoria String  @db.VarChar(30)
@@ -20,7 +20,7 @@ model usuarios {
   nomeCompleto   String    @db.VarChar(200)
   cpf            String    @db.VarChar(100)
   dataNascimento DateTime? @db.Date
-  celular        String    @db.VarChar(100)
+  celular        String?   @db.VarChar(100)
   email          String    @db.VarChar(100)
   senha          String    @db.VarChar(100)
   repetirSenha   String    @db.VarChar(100)
@@ -40,23 +40,4 @@ model usuariospj {
   id                 Int    @id @default(autoincrement())
 
   @@unique([cnpj, inscriEstadual, email], map: "usuariospj_un")
-}
-
-model cidades {
-  id         Int    @id @default(autoincrement())
-  nome       String @db.VarChar(100)
-  enderecoId Int
-
-  @@index([enderecoId], map: "cidades_enderecoId_fkey")
-}
-
-model enderecos {
-  id         Int    @id @default(autoincrement())
-  rua        String @db.VarChar(200)
-  numero     Int
-  bairro     String @db.VarChar(30)
-  estado     String @db.VarChar(30)
-  usuariosId Int
-
-  @@index([usuariosId], map: "enderecos_usuariosId_fkey")
 }

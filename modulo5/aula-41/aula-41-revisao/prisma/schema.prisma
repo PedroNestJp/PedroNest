@@ -4,7 +4,7 @@ generator client {
 
 datasource db {
   provider = "mysql"
-  url      = "mysql://root:@localhost:3306/BancoNest"
+  url      = env("DATABASE_URL")
 }
 
 model produtos {
@@ -24,8 +24,28 @@ model usuarios {
   email          String    @db.VarChar(100)
   senha          String    @db.VarChar(100)
   repetirSenha   String    @db.VarChar(100)
+  enderecos enderecos[]
 
   @@unique([cpf, email], map: "usuarios_un")
+}
+
+model enderecos {
+  id         Int    @id @default(autoincrement())
+  rua        String @db.VarChar(200)
+  numero     Int
+  bairro     String @db.VarChar(30)
+  estado     String @db.VarChar(30)
+  usuariosId Int
+  usuarios usuarios @relation(fields: [usuariosId], references: [id])
+  cidades cidades[]
+
+}
+
+model cidades {
+  id         Int    @id @default(autoincrement())
+  nome       String @db.VarChar(100)
+  enderecoId Int
+  endereco enderecos @relation(fields: [enderecoId], references: [id])
 }
 
 model usuariospj {
@@ -42,21 +62,3 @@ model usuariospj {
   @@unique([cnpj, inscriEstadual, email], map: "usuariospj_un")
 }
 
-model cidades {
-  id         Int    @id @default(autoincrement())
-  nome       String @db.VarChar(100)
-  enderecoId Int
-
-  @@index([enderecoId], map: "cidades_enderecoId_fkey")
-}
-
-model enderecos {
-  id         Int    @id @default(autoincrement())
-  rua        String @db.VarChar(200)
-  numero     Int
-  bairro     String @db.VarChar(30)
-  estado     String @db.VarChar(30)
-  usuariosId Int
-
-  @@index([usuariosId], map: "enderecos_usuariosId_fkey")
-}

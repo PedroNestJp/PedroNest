@@ -12,42 +12,55 @@ model produtos {
   nome      String? @db.VarChar(50)
   descricao String? @db.VarChar(254)
   categoria String  @db.VarChar(30)
-  preco     String? @db.VarChar(50)
+  valor     String? @db.VarChar(50)
+}
+
+
+model usuariospj {
+  nomeFantasia       String @map("nome_fantasia") @db.VarChar(100)
+  razaoSocial        String @map("razao_social") @db.VarChar(100)
+  cnpj               String @db.VarChar(16)
+  inscriEstadual     String @map("inscricao_estadual") @db.VarChar(12)
+  nomeCompRespCompra String @map("nome_comp_resp_compra")@db.VarChar(120)
+  email              String @db.VarChar(100)
+  senha              String @db.VarChar(20)
+  repetirSenha       String @map("repetir_senha")@db.VarChar(20)
+  id                 Int    @id @default(autoincrement())
+  enderecos enderecos[]
+
+  @@unique([cnpj, inscriEstadual, email], map: "usuariospj_un")
 }
 
 model usuarios {
   id             Int       @id @default(autoincrement())
-  nomeCompleto   String    @db.VarChar(200)
-  cpf            String    @db.VarChar(100)
-  dataNascimento DateTime? @db.Date
-  celular        String    @db.VarChar(100)
+  nomeCompleto   String    @map("nome_completo") @db.VarChar(200)
+  cpf            String    @db.VarChar(15)
+  dataNascimento DateTime? @map("data_nascimento") @db.Date
+  celular        String    @db.VarChar(17)
   email          String    @db.VarChar(100)
-  senha          String    @db.VarChar(100)
-  repetirSenha   String    @db.VarChar(100)
+  senha          String    @db.VarChar(20)
+  repetirSenha   String    @map("repetir_senha") @db.VarChar(20)
+  enderecos enderecos[]
 
   @@unique([cpf, email], map: "usuarios_un")
 }
 
-model usuariospj {
-  nomeFantasia       String @db.VarChar(100)
-  razaoSocial        String @db.VarChar(200)
-  cnpj               String @db.VarChar(25)
-  inscriEstadual     String @db.VarChar(12)
-  nomeCompRespCompra String @db.VarChar(200)
-  email              String @db.VarChar(100)
-  senha              String @db.VarChar(100)
-  repetirSenha       String @db.VarChar(100)
-  id                 Int    @id @default(autoincrement())
-
-  @@unique([cnpj, inscriEstadual, email], map: "usuariospj_un")
+model estados {
+  id Int @id @default(autoincrement())
+  nome String @db.VarChar(50)
+  sigla String @db.VarChar(3)
+  ciadedesId Int @map("cidades_id")
+  cidade cidades @relation(fields: [ciadedesId], references: [id])
+  
 }
 
 model cidades {
   id         Int    @id @default(autoincrement())
   nome       String @db.VarChar(100)
-  enderecoId Int
+  enderecoId Int @map("endereco_id")
+  endereco enderecos @relation(fields: [enderecoId], references: [id])
+  estados estados[]
 
-  @@index([enderecoId], map: "cidades_enderecoId_fkey")
 }
 
 model enderecos {
@@ -55,8 +68,12 @@ model enderecos {
   rua        String @db.VarChar(200)
   numero     Int
   bairro     String @db.VarChar(30)
-  estado     String @db.VarChar(30)
-  usuariosId Int
+  usuariosId Int @map("usuarios_id")
+  usuario usuarios @relation( fields: [usuariosId],references: [id])
+  usuariospjId Int @map("usuariopj_id")
+  usuariopj usuariospj @relation(fields: [usuariospjId], references: [id])
+  cidades cidades[]
 
-  @@index([usuariosId], map: "enderecos_usuariosId_fkey")
 }
+
+

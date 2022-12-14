@@ -20,7 +20,7 @@ app.get('/produtos_async', async (req,res)=>{
         console.log('error')
         res.send(error)
     }finally {
-        console.log('the request was successful')}
+        console.log('the request was successfully')}
     
     
 })

@@ -1,5 +1,4 @@
 import { useState } from "react";
-import api from "./services/api";
 
 function StateFul() {
     const [total,setTotal] = useState(0)

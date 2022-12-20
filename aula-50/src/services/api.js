@@ -1,7 +1,7 @@
-import axios from 'react'
+import axios from 'axios'
 
 const api = axios.create({
-    urlBase:'https://pokeapi.co/api/v2/ability/'
+    baseURL:'https://pokeapi.co/api/v2/move'
 })
 
 export default api

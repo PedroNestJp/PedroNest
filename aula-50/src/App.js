@@ -1,12 +1,11 @@
-import React from "react";
-import { StateFul } from "./StateFul";
+import Pokemons from "./pages/Pokemons";
 
 function App() {
   return (
     <>
-      <StateFul/>
+       <Pokemons/>
+    
     </>
-  );
+  )
 }
-
 export default App;

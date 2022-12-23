@@ -3,7 +3,7 @@ import Home from './pages/Home';
 import Produtos from './pages/Produtos';
 import Sobre from './pages/Sobre';
 import './App.css';
-import Nav from './components/Nav'
+import {Nav, Footer} from './components/components'
 
 function App() {
   return (
@@ -16,10 +16,9 @@ function App() {
           <Route path="/sobre"  element={<Sobre/>} />
         </Routes>
       </BrowserRouter>
+      <Footer/>
    
-        <footer>
-          <h3>  por Pedro Nest </h3>
-        </footer>
+        
     </>
   );
 }

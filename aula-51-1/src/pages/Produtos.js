@@ -10,7 +10,7 @@ const Produtos = () => {
 
 
     const findProdutos = async () => {
-        const response = await axios.getUri('mongodb+srv://pedronest:pedronest@pedronest.8ao18d8.mongodb.net/test')
+        const response = await axios.getUri("mongodb+srv://pedronest:pedronest@pedronest.8ao18d8.mongodb.net/test")
         setProdutos(response.data)
         console.log(response)
         return(response.data) 

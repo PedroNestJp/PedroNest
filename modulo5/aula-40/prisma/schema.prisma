@@ -1,0 +1,42 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model produtos {
+  id        Int     @id @default(autoincrement())
+  nome      String? @db.VarChar(50)
+  descricao String? @db.VarChar(254)
+  categoria String  @db.VarChar(30)
+  preco     String? @db.VarChar(50)
+}
+
+model usuarios {
+  id             Int       @id @default(autoincrement())
+  nomeCompleto   String    @map("nome_completo") @db.VarChar(200)
+  cpf            String    @db.VarChar(100)
+  dataNascimento DateTime? @map("data_nascimento") @db.Date
+  celular        String?   @db.VarChar(100)
+  email          String    @db.VarChar(100)
+  repetirSenha   String    @map("repetir_senha") @db.VarChar(100)
+
+  @@unique([cpf, email], map: "usuarios_un")
+}
+
+model usuariospj {
+  nomeFantasia       String  @map("nome_fantasia") @db.VarChar(100)
+  razaoSocial        String  @map("razao_social") @db.VarChar(200)
+  cnpj               String @db.VarChar(25)
+  inscriEstadual     String  @map("inscricao_estadual") @db.VarChar(12)
+  nomeCompRespCompra String  @map("nome_completo_resp_compra") @db.VarChar(200)
+  email              String @db.VarChar(100)
+  senha              String @db.VarChar(100)
+  repetirSenha       String  @map("repetir_senha") @db.VarChar(100)
+  id                 Int    @id @default(autoincrement())
+
+  @@unique([cnpj, inscriEstadual, email], map: "usuariospj_un")
+}

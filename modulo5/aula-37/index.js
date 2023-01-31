@@ -1,9 +1,16 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const port = 3001
+const axios = require('axios')
 
 app.get('/', (req,res) => {
-    return res.send('ok')
+    res.send('ok')
+})
+
+app.get('/produtos', ()=> {
+    axios.get((req,res)=> {
+        res.send(resposta)
+    })
 })
 
 app.listen(port,() => console.log(`serviço rodando na porta : ${port}`))

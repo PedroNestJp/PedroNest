@@ -1,0 +1,64 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model produtos {
+  id        Int     @id @default(autoincrement())
+  nome      String? @db.VarChar(50)
+  descricao String? @db.VarChar(254)
+  categoria String  @db.VarChar(30)
+  preco     String? @db.VarChar(50)
+}
+
+model usuarios {
+  id             Int       @id @default(autoincrement())
+  nomeCompleto   String    @db.VarChar(200)
+  cpf            String    @db.VarChar(100)
+  dataNascimento DateTime? @db.Date
+  celular        String    @db.VarChar(100)
+  email          String    @db.VarChar(100)
+  senha          String    @db.VarChar(100)
+  repetirSenha   String    @db.VarChar(100)
+  enderecos enderecos[]
+
+  @@unique([cpf, email], map: "usuarios_un")
+}
+
+model enderecos {
+  id         Int    @id @default(autoincrement())
+  rua        String @db.VarChar(200)
+  numero     Int
+  bairro     String @db.VarChar(30)
+  estado     String @db.VarChar(30)
+  usuariosId Int
+  usuarios usuarios @relation(fields: [usuariosId], references: [id])
+  cidades cidades[]
+
+}
+
+model cidades {
+  id         Int    @id @default(autoincrement())
+  nome       String @db.VarChar(100)
+  enderecoId Int
+  endereco enderecos @relation(fields: [enderecoId], references: [id])
+}
+
+model usuariospj {
+  nomeFantasia       String @db.VarChar(100)
+  razaoSocial        String @db.VarChar(200)
+  cnpj               String @db.VarChar(25)
+  inscriEstadual     String @db.VarChar(12)
+  nomeCompRespCompra String @db.VarChar(200)
+  email              String @db.VarChar(100)
+  senha              String @db.VarChar(100)
+  repetirSenha       String @db.VarChar(100)
+  id                 Int    @id @default(autoincrement())
+
+  @@unique([cnpj, inscriEstadual, email], map: "usuariospj_un")
+}
+
